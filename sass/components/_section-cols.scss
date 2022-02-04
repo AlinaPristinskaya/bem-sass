@@ -1,0 +1,16 @@
+.section-cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-col {
+  &:first-child {
+    width: 40%;
+  }
+  &:last-child {
+    width: 44%;
+  }
+  &__image {
+    width: 100%;
+  }
+}

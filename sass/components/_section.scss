@@ -1,0 +1,71 @@
+.section__main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: var(--main_shift);
+  right: var(--main_shift);
+  top: 14vw;
+}
+.social-networks {
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    writing-mode: vertical-rl;
+    margin-bottom: 1.3em;
+  }
+  &__item {
+    margin-bottom: 1rem;
+  }
+  &__link {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+}
+.icon__instagram {
+  width: 1.3rem;
+  height: 1.3rem;
+  background: url("/images/icons/instagram.svg");
+  background-size: cover;
+}
+.icon__facebook {
+  width: 1.3rem;
+  height: 1.3rem;
+  background: url("/images/icons/facebook.svg");
+  background-size: cover;
+}
+.icon__twitter {
+  width: 1.3rem;
+  height: 1.3rem;
+  background: url("/images/icons/twitter.svg");
+  background-size: cover;
+}
+.icon__arrow_downward {
+  width: 0.9rem;
+  height: 1.4rem;
+  background: url("/images/icons/arrow_downward.svg");
+  background-size: contain;
+}
+.icon__arrow_rightward {
+  width: 1.4rem;
+  height: 0.9rem;
+  background: url("/images/icons/arrow_rightward.svg");
+  background-size: contain;
+}
+.scroll-down {
+  display: flex;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+  &__icon {
+    margin: 0.2em 0 0 0.5em;
+  }
+}
